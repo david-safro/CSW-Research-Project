@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/neural network/data/')
 from data import HeartDiseasePrediction
 
 # Usage example:

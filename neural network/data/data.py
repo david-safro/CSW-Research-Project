@@ -57,4 +57,20 @@ class HeartDiseasePrediction:
             self.X_scaled, self.y, test_size=test_size, random_state=random_state
         )
 
+    def get_row_by_index(self, index):
+        return list(self.data.iloc[index])
 
+    def get_column_data(self, column_name):
+        return list(self.data[column_name])
+
+    def print_sample_data(self):
+        print("Sample data:")
+        print(self.data.head())
+
+    def print_scaled_features(self):
+        print("Scaled features:")
+        print(self.X_scaled[:5])
+
+    def print_data_shapes(self):
+        print("Training set shape:", self.X_train.shape, self.y_train.shape)
+        print("Testing set shape:", self.X_test.shape, self.y_test.shape)

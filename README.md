@@ -1,5 +1,5 @@
 # Cardiovascular disease detector
-This is ==STILL IN ALPHA DEVELOPMENT==.
+This is **STILL IN ALPHA DEVELOPMENT**.
 
 A neural network that identifies cardiovasculard conditions based on a series of symptoms inputted through text.
 ## Table of Contents

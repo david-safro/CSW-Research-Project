@@ -1,26 +1,30 @@
-# Project Title 
-Brief project description 2-3 sentences.
-
+# Cardiovascular disease detector
+==STILL IN ALPHA DEVELOPMENT==
+A neural network that identifies cardiovasculard conditions based on a series of symptoms inputted through text.
 ## Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Installing](#installing)
+- [Roadmap](#Roadmap)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
 ## About
-Write about 1-2 paragraphs describing the purpose of your project.
+Our sophomore research project. We are building a neural network that will identify cardiovascular diseases using PyTorch. The neural network will deployed to a nodeJS webserver that will host a page on which visitors can input their conditions and get predictions in real time.
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Installing
-Installation instructions.
+## Roadmap
+* Build the neural network
+* Convert to Rust or develop custom C library
+* Develop a quantum version using quskit and test on IBM Quantum lab
+* Connect neural network to a NodeJS webserver.
+* Host a webpage for at least 3 months.
 
 ## Usage
-A step by step series of examples that tell you how to get a development env running.
+not possible yet :(
 
 ## Contributing
-* [https://github.com/Glitchez-1984] David Safro
-* [https://github.com/AnishC10] Anish Chakraborty
+* [https://github.com/Glitchez-1984](###David Safro)
+* [https://github.com/AnishC10](###Anish Chakraborty)

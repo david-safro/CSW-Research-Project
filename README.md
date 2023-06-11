@@ -26,5 +26,5 @@ These instructions will get you a copy of the project up and running on your loc
 not possible yet :(
 
 ## Contributing
-* [https://github.com/Glitchez-1984](###David Safro)
-* [https://github.com/AnishC10](###Anish Chakraborty)
+* [https://github.com/Glitchez-1984](#David Safro)
+* [https://github.com/AnishC10](#Anish Chakraborty)

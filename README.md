@@ -19,7 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 ## Roadmap
 * Build the neural network
 * Convert to Rust or develop custom C library
-* Develop a quantum version using qiskit and test on IBM Quantum lab
+* Develop a quantum version using Qiskit and test on IBM Quantum lab
 * Connect neural network to a NodeJS web server.
 * Host a webpage for at least 3 months.
 

@@ -39,20 +39,29 @@ class NeuralNetwork(nn.Module):
         return x
 
 
+X_train, y_train = X_train.to(device), y_train.to(device)
+X_test, y_test = X_test.to(device), y_train.to(device)
 
-
-X_train = X_train.to(device)
 
 def main():
     model = NeuralNetwork.to(device)
     loss_fn = nn.BCEWithLogitsLoss()
     optimizer = torch.optim.SGD(params = NeuralNetwork.parameters(), lr=LR)
     torch.manual_seed(42)
+    # train and test loop
     for epoch in range(EPOCH_COUNT):
         model.train()
+        logits = model(X_train).squeeze()
+        final = torch.round(torch.sigmoid(logits))
+        loss = loss_fn(logits, y_train)
         optimizer.zero_grad()
+        loss.backward()
         optimizer.step()
-        #train loop
+        model.eval()
+        with torch.inference_mode():
+            test_logits = model(X_test).squeeze()
+            test_final = torch.round(torch.sigmoid(test_logits))
+            test_loss = loss_fn(test_logits, y_test)
         if (epoch + 1) % 10 == 0:
             print(f'Epoch [{epoch + 1}/{EPOCH_COUNT}], Loss: {loss_fn.item():.4f}')
 

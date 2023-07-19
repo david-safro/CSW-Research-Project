@@ -2,7 +2,6 @@ import sys
 import os
 import torch
 import torch.nn as nn
-import torch.optim as optim
 from constants import *
 # Add the parent directory of the neural network folder to the module search path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -39,8 +38,8 @@ class NeuralNetwork(nn.Module):
         return x
 
 
-X_train, y_train = X_train.to(device), y_train.to(device)
-X_test, y_test = X_test.to(device), y_train.to(device)
+X_train, y_train = prediction.X_train.to(device), prediction.y_train.to(device)
+X_test, y_test = prediction.X_test.to(device), prediction.y_test.to(device)
 
 
 def main():
@@ -62,8 +61,8 @@ def main():
             test_logits = model(X_test).squeeze()
             test_final = torch.round(torch.sigmoid(test_logits))
             test_loss = loss_fn(test_logits, y_test)
-        if (epoch + 1) % 10 == 0:
-            print(f'Epoch [{epoch + 1}/{EPOCH_COUNT}], Loss: {loss_fn.item():.4f}')
+        if epoch % 10 == 0:
+            print(f'Epoch {epoch}/{EPOCH_COUNT}, Loss: {loss_fn.item():.4f}')
 
 
 if __name__ == '__main':

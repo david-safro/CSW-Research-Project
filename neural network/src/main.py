@@ -3,10 +3,11 @@ import os
 import torch
 import torch.nn as nn
 from constants import *
+
 # Add the parent directory of the neural network folder to the module search path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from data.data import HeartDiseasePrediction
+from data import HeartDiseasePrediction
 csv_file = 'Heart_Disease_Prediction.csv'
 prediction = HeartDiseasePrediction()
 prediction.read_data()

@@ -1,5 +1,6 @@
-EPOCH_COUNT = 10
-LR = 0.1
-input_size = 2
-hidden_size = 10
-output_size = 2
+CSV_FILE = 'Heart_Disease_Prediction.csv'
+INPUT_SIZE = 14
+HIDDEN_SIZE = 256
+OUTPUT_SIZE = 1
+LEARNING_RATE = 0.0001
+EPOCH_COUNT = 200

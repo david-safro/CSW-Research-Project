@@ -1,5 +1,5 @@
 # Cardiovascular disease detector
-This is **STILL IN ALPHA DEVELOPMENT**.
+This is **STILL IN ALPHA DEVELOPMENT DO NOT ATTEMPT TO RUN YET CODE REVIEW ONLY**.
 
 Neural networks both quantum and classical to detect cardiovascular diseases. 
 ## Table of Contents

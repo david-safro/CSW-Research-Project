@@ -1,7 +1,7 @@
 # Cardiovascular disease detector
 This is **STILL IN ALPHA DEVELOPMENT**.
 
-A neural network that identifies cardiovascular conditions based on a series of symptoms inputted through text.
+Neural networks both quantum and classical to detect cardiovascular diseases. 
 ## Table of Contents
 
 - [About](#about)

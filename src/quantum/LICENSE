@@ -17,4 +17,4 @@
 
 # Modifications by Anish Chakraborty and David Safro
 # Modifications include changing the ansatz and feature map type, as well as adding a decompose statement. A new data preprocessing method was used, and a completely different dataset was used. In addition, the callback graph was omitted.  
-# However, we would like to give credit to the Qiskit tutorials that we used to gain the knowledge to make our own VQCs. 
+
